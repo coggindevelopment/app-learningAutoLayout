@@ -93,28 +93,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iaK-ti-AkZ">
-                                <rect key="frame" x="112.5" y="497" width="150" height="150"/>
+                                <rect key="frame" x="20" y="497" width="335" height="150"/>
                                 <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="CaK-Ok-w8N"/>
-                                    <constraint firstAttribute="height" constant="150" id="NgB-fJ-KWX"/>
+                                    <constraint firstAttribute="height" constant="150" id="5sX-QT-N8A"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LhU-ty-CW4">
-                                <rect key="frame" x="67.5" y="339" width="240" height="128"/>
+                                <rect key="frame" x="20" y="40" width="335" height="437"/>
                                 <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="5bg-lV-e2E"/>
-                                    <constraint firstAttribute="height" constant="128" id="fnI-sB-Vsl"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="gyw-22-W8U" firstAttribute="bottom" secondItem="iaK-ti-AkZ" secondAttribute="bottom" constant="20" id="RM6-di-hIP"/>
-                            <constraint firstItem="iaK-ti-AkZ" firstAttribute="centerX" secondItem="LhU-ty-CW4" secondAttribute="centerX" id="d2E-3P-OD5"/>
-                            <constraint firstItem="iaK-ti-AkZ" firstAttribute="top" secondItem="LhU-ty-CW4" secondAttribute="bottom" constant="30" id="g2d-Vb-K6h"/>
-                            <constraint firstItem="iaK-ti-AkZ" firstAttribute="centerX" secondItem="pJz-cG-WOT" secondAttribute="centerX" id="l3Y-ay-udW"/>
+                            <constraint firstItem="LhU-ty-CW4" firstAttribute="leading" secondItem="gyw-22-W8U" secondAttribute="leading" constant="20" id="474-ur-xFz"/>
+                            <constraint firstItem="gyw-22-W8U" firstAttribute="trailing" secondItem="iaK-ti-AkZ" secondAttribute="trailing" constant="20" id="FHj-ZQ-ZKr"/>
+                            <constraint firstItem="iaK-ti-AkZ" firstAttribute="leading" secondItem="gyw-22-W8U" secondAttribute="leading" constant="20" id="Icp-WO-adm"/>
+                            <constraint firstItem="gyw-22-W8U" firstAttribute="bottom" secondItem="iaK-ti-AkZ" secondAttribute="bottom" constant="20" id="LGK-Ly-zpx"/>
+                            <constraint firstItem="iaK-ti-AkZ" firstAttribute="top" secondItem="LhU-ty-CW4" secondAttribute="bottom" constant="20" id="SWs-QB-Ten"/>
+                            <constraint firstItem="gyw-22-W8U" firstAttribute="trailing" secondItem="LhU-ty-CW4" secondAttribute="trailing" constant="20" id="add-46-Uor"/>
+                            <constraint firstItem="LhU-ty-CW4" firstAttribute="top" secondItem="gyw-22-W8U" secondAttribute="top" constant="20" id="vy6-5y-YCP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gyw-22-W8U"/>
                     </view>
