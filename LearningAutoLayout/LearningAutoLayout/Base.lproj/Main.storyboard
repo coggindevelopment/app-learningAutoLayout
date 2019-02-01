@@ -93,26 +93,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iaK-ti-AkZ">
-                                <rect key="frame" x="20" y="497" width="335" height="150"/>
+                                <rect key="frame" x="112.5" y="258.5" width="150" height="150"/>
                                 <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="5sX-QT-N8A"/>
+                                    <constraint firstAttribute="width" constant="150" id="KLW-0O-2yS"/>
+                                    <constraint firstAttribute="height" constant="150" id="qve-AA-Ma8"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LhU-ty-CW4">
-                                <rect key="frame" x="20" y="40" width="335" height="437"/>
+                                <rect key="frame" x="112.5" y="88.5" width="150" height="150"/>
                                 <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="LhU-ty-CW4" firstAttribute="leading" secondItem="gyw-22-W8U" secondAttribute="leading" constant="20" id="474-ur-xFz"/>
-                            <constraint firstItem="gyw-22-W8U" firstAttribute="trailing" secondItem="iaK-ti-AkZ" secondAttribute="trailing" constant="20" id="FHj-ZQ-ZKr"/>
-                            <constraint firstItem="iaK-ti-AkZ" firstAttribute="leading" secondItem="gyw-22-W8U" secondAttribute="leading" constant="20" id="Icp-WO-adm"/>
-                            <constraint firstItem="gyw-22-W8U" firstAttribute="bottom" secondItem="iaK-ti-AkZ" secondAttribute="bottom" constant="20" id="LGK-Ly-zpx"/>
-                            <constraint firstItem="iaK-ti-AkZ" firstAttribute="top" secondItem="LhU-ty-CW4" secondAttribute="bottom" constant="20" id="SWs-QB-Ten"/>
-                            <constraint firstItem="gyw-22-W8U" firstAttribute="trailing" secondItem="LhU-ty-CW4" secondAttribute="trailing" constant="20" id="add-46-Uor"/>
-                            <constraint firstItem="LhU-ty-CW4" firstAttribute="top" secondItem="gyw-22-W8U" secondAttribute="top" constant="20" id="vy6-5y-YCP"/>
+                            <constraint firstItem="LhU-ty-CW4" firstAttribute="centerX" secondItem="pJz-cG-WOT" secondAttribute="centerX" id="8aG-zo-xPx"/>
+                            <constraint firstItem="iaK-ti-AkZ" firstAttribute="centerX" secondItem="pJz-cG-WOT" secondAttribute="centerX" id="T9j-LX-cb8"/>
+                            <constraint firstItem="iaK-ti-AkZ" firstAttribute="centerY" secondItem="pJz-cG-WOT" secondAttribute="centerY" id="hKJ-h7-QGw"/>
+                            <constraint firstItem="iaK-ti-AkZ" firstAttribute="width" secondItem="LhU-ty-CW4" secondAttribute="width" id="jSN-NC-6a3"/>
+                            <constraint firstItem="iaK-ti-AkZ" firstAttribute="height" secondItem="LhU-ty-CW4" secondAttribute="height" id="tsK-6d-Ge4"/>
+                            <constraint firstItem="iaK-ti-AkZ" firstAttribute="top" secondItem="LhU-ty-CW4" secondAttribute="bottom" constant="20" id="vjh-9j-ida"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gyw-22-W8U"/>
                     </view>
