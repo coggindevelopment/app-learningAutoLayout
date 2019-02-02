@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wxv-oz-SGN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -18,27 +18,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6KE-Cj-TlE">
-                                <rect key="frame" x="97.5" y="124" width="180" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="tOV-mT-4oo">
+                                <rect key="frame" x="59.5" y="56" width="256" height="119.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the New App!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmV-PR-ZlP">
+                                        <rect key="frame" x="0.0" y="0.0" width="256" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6KE-Cj-TlE">
+                                        <rect key="frame" x="0.0" y="41.5" width="256" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JPU-bo-UgE">
+                                        <rect key="frame" x="0.0" y="89.5" width="256" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="password"/>
+                                    </textField>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="180" id="of3-As-iLl"/>
+                                    <constraint firstAttribute="width" constant="256" id="Jlj-DA-F2P"/>
                                 </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JPU-bo-UgE">
-                                <rect key="frame" x="97.5" y="170" width="180" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="password"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the New App!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmV-PR-ZlP">
-                                <rect key="frame" x="16" y="44" width="343" height="24"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s24-7A-I2h">
                                 <rect key="frame" x="123.5" y="599" width="128" height="36"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -54,15 +59,9 @@
                         </subviews>
                         <color key="backgroundColor" red="0.24313725490196078" green="0.63137254901960782" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6KE-Cj-TlE" firstAttribute="top" secondItem="fmV-PR-ZlP" secondAttribute="bottom" constant="56" id="6pe-FB-vNN"/>
-                            <constraint firstItem="fmV-PR-ZlP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="9oU-HL-2zf"/>
                             <constraint firstItem="s24-7A-I2h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J4P-iA-ht0"/>
-                            <constraint firstItem="fmV-PR-ZlP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="Lhh-b9-5Qs"/>
-                            <constraint firstItem="JPU-bo-UgE" firstAttribute="top" secondItem="6KE-Cj-TlE" secondAttribute="bottom" constant="16" id="PCd-Fr-wIc"/>
-                            <constraint firstItem="JPU-bo-UgE" firstAttribute="centerX" secondItem="6KE-Cj-TlE" secondAttribute="centerX" id="gbS-2T-y88"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fmV-PR-ZlP" secondAttribute="trailing" constant="16" id="glF-iK-Tbh"/>
-                            <constraint firstItem="JPU-bo-UgE" firstAttribute="width" secondItem="6KE-Cj-TlE" secondAttribute="width" id="lRQ-5Q-WoR"/>
-                            <constraint firstItem="6KE-Cj-TlE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uFv-E4-Ca0"/>
+                            <constraint firstItem="tOV-mT-4oo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c7h-y6-3gY"/>
+                            <constraint firstItem="tOV-mT-4oo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="wgC-LC-q9z"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="s24-7A-I2h" secondAttribute="bottom" constant="32" id="xpH-yv-s1E"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
